@@ -55,9 +55,9 @@ function montaTr(paciente) {
 
 function montaTd(dado, classe) {
     var td = document.createElement("td");
-    td.classList.add(classe);
-    td.textContent = dado;
-
+        td.classList.add(classe);
+        td.textContent = dado;
+        
     return td;
 }
 
