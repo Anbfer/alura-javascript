@@ -142,7 +142,7 @@ button[disabled=disabled], button:disabled {
 }
 .fadeOut {
 	opacity: 0;
-	transition: 0.5s;
+	transition: all 500ms ease-in-out;
 }
 #filtrar-tabela {
 	width: 200px;
@@ -150,5 +150,12 @@ button[disabled=disabled], button:disabled {
 	margin-bottom: 10px;
 }
 .invisivel{
-	display: none;
+	opacity: 0;
+	margin: auto;
+	transition: all 300ms ease-in-out;
+}
+.visivel {
+	opacity: 1;
+	margin: auto;
+	transition: all 300ms ease-in-out;
 }

@@ -1,8 +1,7 @@
 var botaoAdicionar = document.querySelector("#buscar-pacientes");
 
 botaoAdicionar.addEventListener("click", function () {
-
-
+    
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://api-pacientes.herokuapp.com/pacientes");
 
@@ -15,6 +14,7 @@ botaoAdicionar.addEventListener("click", function () {
 
             pacientes.forEach(function (paciente) {
                 addPatientOnTable(paciente);
+                botaoAdicionar.setAttribute("disabled", "disabled");
             });
 
         } else {
